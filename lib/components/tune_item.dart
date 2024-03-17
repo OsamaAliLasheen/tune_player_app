@@ -11,7 +11,6 @@ class TuneItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: SizedBox(
-        height: MediaQuery.of(context).size.height, // 7.89,
         width: double.infinity,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
@@ -22,7 +21,7 @@ class TuneItem extends StatelessWidget {
           ),
           onPressed: () {
             final player = AudioPlayer();
-            player.play(AssetSource('note2.wav'));
+            player.play(AssetSource(tune));
           },
           child: null,
         ),

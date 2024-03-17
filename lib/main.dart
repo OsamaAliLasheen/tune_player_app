@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'tune_screen.dart';
+import 'screens/tune_screen.dart';
 
 void main() {
   runApp(const MyApp());
